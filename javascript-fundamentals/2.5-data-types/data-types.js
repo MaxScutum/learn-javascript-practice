@@ -95,3 +95,21 @@ const nullValue = null; // null
 const symbolValue = Symbol("symbol"); // symbol
 const bigintValue = 123456789012345678901234567890n; // bigint
 const person = { name: "John", age: 20 }; // object
+
+typeof []; // "object"
+// it's a special kind of object
+// typeof () => {}
+// Uncaught SyntaxError: Malformed arrow function parameter list
+typeof (() => {}); // "function"
+typeof undefined; // "undefined"
+typeof null; // "object" — because that's how typeof is defined in the spec
+typeof (typeof 'aboha'); // "string"
+typeof typeof 'aboba'; // "string"
+typeof typeof 123; // "string"
+typeof (typeof 123); // "string"
+
+console.log(1);
+alert(2);
+console.log(3);
+
+// alert(2) pauses execution: 1 is logged first, then the dialog with 2, and 3 is logged only after OK

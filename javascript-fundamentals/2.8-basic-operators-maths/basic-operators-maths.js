@@ -51,3 +51,14 @@ alert(6 - "2"); // 4, converts '2' to a number
 alert("6" / "2"); // 3, converts both operands to numbers
 
 // Numeric conversion, unary +
+
+// No effect on numbers
+let r = 1;
+alert(+r); // 1
+
+let w = -2;
+alert(+w); // -2
+
+// Converts non-numbers
+alert(+true); // 1
+alert(+""); // 0

@@ -104,3 +104,27 @@ let message =
         : "What an unusual age!";
 
 alert(message);
+
+if (age2 < 3) {
+  message = "Hi, baby!";
+} else if (age2 < 18) {
+  message = "Hello!";
+} else if (age2 < 100) {
+  message = "Greetings!";
+} else {
+  message = "What an unusual age!";
+}
+
+alert(message);
+
+// Non-traditional use of ‘?’
+
+let company = prompt("Which company created JavaScript?", "");
+company == "Netscape" ? alert("Right!") : alert("Wrong.");
+
+let company2 = prompt("Which company created JavaScript?", "");
+if (company2 == "Netscape") {
+  alert("Right!");
+} else {
+  alert("Wrong.");
+}

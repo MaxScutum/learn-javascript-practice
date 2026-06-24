@@ -46,3 +46,61 @@ if (year3 == 2015) {
 } else {
   alert("How can you be so wrong?"); // any value except 2015
 }
+
+// Several conditions: “else if”
+
+let year4 = prompt(
+  "In which year was the ECMAScript-2015 specification published?",
+  "",
+);
+
+if (year4 < 2015) {
+  alert("Too early...");
+} else if (year4 > 2015) {
+  alert("Too late");
+} else {
+  alert("Exactly!");
+}
+
+// Conditional operator ‘?’
+
+let accessAllowed;
+let age = prompt("How old are you?", "");
+
+if (age > 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
+
+alert(accessAllowed);
+
+let accessAllowed2 = age > 18 ? true : false;
+alert(accessAllowed2);
+
+// the same
+let accessAllowed3 = age > 18;
+alert(accessAllowed3);
+
+// the same
+let accessAllowed4 = Boolean(age > 18);
+alert(accessAllowed4);
+
+// the same
+let accessAllowed5 = !!(age > 18);
+alert(accessAllowed5);
+
+// Multiple ‘?’
+
+let age2 = prompt("age?", 18);
+
+let message =
+  age2 < 3
+    ? "Hi, baby!"
+    : age2 < 18
+      ? "Hello!"
+      : age2 < 100
+        ? "Greetings!"
+        : "What an unusual age!";
+
+alert(message);

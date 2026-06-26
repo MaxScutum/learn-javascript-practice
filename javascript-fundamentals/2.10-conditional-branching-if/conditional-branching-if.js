@@ -1,4 +1,4 @@
-// 2.10. Conditional branching: if, '?'
+// 2.10. Conditional branching: if, '?'.
 
 // The “if” statement
 

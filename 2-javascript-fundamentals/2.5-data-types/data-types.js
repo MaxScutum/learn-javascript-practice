@@ -29,7 +29,7 @@ alert(bigInt); // BigInt
 const str = "Hello";
 alert(str); // Hello
 
-const str2 = 'Single quotes are ok too';
+const str2 = "Single quotes are ok too";
 alert(str2); // Single quotes are ok too
 
 const phrase = `can embed another ${str}`;
@@ -103,10 +103,10 @@ typeof []; // "object"
 typeof (() => {}); // "function"
 typeof undefined; // "undefined"
 typeof null; // "object" — because that's how typeof is defined in the spec
-typeof (typeof 'aboha'); // "string"
-typeof typeof 'aboba'; // "string"
+typeof typeof "aboha"; // "string"
+typeof typeof "aboba"; // "string"
 typeof typeof 123; // "string"
-typeof (typeof 123); // "string"
+typeof typeof 123; // "string"
 
 console.log(1);
 alert(2);

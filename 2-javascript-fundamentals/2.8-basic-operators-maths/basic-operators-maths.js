@@ -1,3 +1,7 @@
+// 2.8. Basic operators, maths
+
+alert("2.8. Basic operators, maths");
+
 /*
 Addition +,
 Subtraction -,
@@ -62,3 +66,5 @@ alert(+w); // -2
 // Converts non-numbers
 alert(+true); // 1
 alert(+""); // 0
+
+alert("The End of 2.8. Basic operators, maths.");
